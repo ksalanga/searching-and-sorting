@@ -7,6 +7,7 @@ public class SearchAndSort {
 	 * 
 	 * @param args
 	 */
+	private ArrayList<Integer> list = new ArrayList<Integer>();
 	
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
@@ -21,7 +22,7 @@ public class SearchAndSort {
 		
 		switch(algorithm.toLowerCase()) {
 		case "bubble":
-			;
+			System.out.print("");
 			break;
 		case "selection":
 			break;
@@ -42,6 +43,7 @@ public class SearchAndSort {
 	}
 	
 	public int[] bubble(int[] n) {
+		this.list.add(2);
 		return n * bubble(n);
 	}
 }
